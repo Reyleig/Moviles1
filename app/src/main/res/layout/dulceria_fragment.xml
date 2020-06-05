@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
+
     android:layout_margin="0dp"
-    android:background="#262020"
-    tools:context=".SplashActivity">
+
+    android:background="#262020">
 
 
     <TextView
@@ -34,10 +36,17 @@
         android:layout_marginLeft="60dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="10dp"
+
         android:foreground="@drawable/paquete"
         android:gravity="center"
         android:padding="0dp"
         android:src="@drawable/paquete"
+
+        android:foreground="@drawable/combo"
+        android:gravity="center"
+        android:padding="0dp"
+        android:src="@drawable/combo"
+
         tools:ignore="NotSibling" />
 
 

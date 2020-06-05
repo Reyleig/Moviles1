@@ -27,6 +27,9 @@ class LoginActicity : AppCompatActivity() {
                 val intento = Intent(this, barra_navegacion::class.java)
                 startActivity(intento)
             }
+            else {
+                Toast.makeText(this,"Incorrect User or Password",Toast.LENGTH_LONG).show()
+            }
         }
         else {
             Toast.makeText(this,"Incorrect User or Password",Toast.LENGTH_LONG).show()

@@ -27,7 +27,7 @@ class Dulceria : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(DulceriaViewModel::class.java)
-        // TODO: Use the ViewModel
+        /// TODO: Use the ViewModel
     }
 
 }
