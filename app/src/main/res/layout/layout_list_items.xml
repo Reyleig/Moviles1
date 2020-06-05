@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#262020"
+ >
+
+    <LinearLayout
+        android:id="@+id/lytDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:background="#262020"
+        >
+
+        <TextView
+            android:id="@+id/txtVwListItemMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mont"
+            android:textColor="#ffffff"
+          />
+        <TextView
+            android:id="@+id/txtVwListItemDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day"
+            android:textColor="#ffffff"
+           />
+
+        <TextView
+            android:id="@+id/txtVwListItemYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="year"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtVwListItemTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/lytDate"
+        android:layout_alignTop="@+id/lytDate"
+        android:gravity="center_vertical"
+        android:text="task:time"
+
+        android:textColor="#ffffff"
+        />
+    <TextView
+        android:id="@+id/txtVwListItemTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/lytDate"
+        android:layout_alignTop="@+id/lytDate"
+        android:layout_toEndOf="@+id/lytDate"
+        android:layout_toStartOf="@+id/lytDate"
+
+        android:gravity="center_vertical"
+        android:text="task:time"
+
+        android:textColor="#ffffff"
+        />
+
+
+
+</RelativeLayout>

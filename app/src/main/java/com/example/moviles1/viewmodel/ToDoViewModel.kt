@@ -3,8 +3,7 @@ package com.example.moviles1.viewmodel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.ViewModelProvider
-import kotlinx.coroutines.CoroutineScope
+import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 import com.example.moviles1.repository.ToDoRepository
 import com.example.moviles1.user.ToDo
@@ -22,11 +21,11 @@ class ToDoViewModel(application: Application) : AndroidViewModel(application) {
 
     fun insert(toDo: ToDo){
         viewModelScope.launch(Dispatchers.IO){
-            repository.insert(ToDo)
+            repository.insert(toDo)
         }
     }
     fun deleteTask(toDo: ToDo){
-        viweModelScope.launch(Dispatchers.IO){
+        viewModelScope.launch(Dispatchers.IO){
             repository.deleteTask(toDo)
         }
     }

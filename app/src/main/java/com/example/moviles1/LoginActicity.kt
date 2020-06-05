@@ -38,7 +38,7 @@ class LoginActicity : AppCompatActivity() {
         startActivity(intento)
     }
     fun onRecuperar (view : View){
-        val  intento = Intent(this, Main2Activity::class.java)
+        val  intento = Intent(this, TaskActivity::class.java)
         startActivity(intento)
     }
 }
